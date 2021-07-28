@@ -35,8 +35,8 @@ function App() {
 
     <div className="App">
       <header><h1>Niki's TodoList</h1>
-        <Form todos={todos} filteredTodos={filteredTodos} setStatus={setStatus} inputText={inputText} setTodos={setTodos} setInputText={setInputText} />
-        <TodoList todos={todos} setTodos={setTodos} />
+        <Form todos={todos}  setStatus={setStatus} inputText={inputText} setTodos={setTodos} setInputText={setInputText} />
+        <TodoList todos={todos} filteredTodos={filteredTodos} setTodos={setTodos} />
 
       </header>
 
