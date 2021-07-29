@@ -6,6 +6,23 @@
   font-family: 'Raleway', sans-serif;
 
 }
+
+body{
+  background: #5f2c82;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+h1{
+  color: rgb(246, 246, 246);
+  font-size: 50px;
+  padding-top: 2rem;
+}
+#op{
+  
+  opacity: 70%;
+}
+
 form{
   display: inline;
 }
@@ -15,13 +32,16 @@ form{
 }
 input{
   padding: .5rem;
+  border-style: none;
 }
 .todo-button{
   padding:.5rem;
-  border: none;
+  border-style: none;
+  background: rgb(97, 128, 212);
 }
 .fa-plus-square{
-  font-size: 1em;
+  font-size: 1;
+  color: white;
 }
 .todo-item{
   list-style: none;
