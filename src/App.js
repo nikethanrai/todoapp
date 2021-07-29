@@ -34,7 +34,7 @@ function App() {
   return (
 
     <div className="App">
-      <header><h1>Todo<span id='op'>List</span></h1>
+      <header><h1>TodoList</h1>
         <Form todos={todos}  setStatus={setStatus} inputText={inputText} setTodos={setTodos} setInputText={setInputText} />
         <TodoList todos={todos} filteredTodos={filteredTodos} setTodos={setTodos} />
 
