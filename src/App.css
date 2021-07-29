@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .App {
   margin: auto;
@@ -10,54 +16,76 @@
 body{
   background: #5f2c82;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #49a09d, #5f2c82);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:white;
+  min-height: 100vh;
+
   
 }
 h1{
-  color: rgb(246, 246, 246);
-  font-size: 50px;
-  padding-top: 2rem;
-}
-#op{
-  
-  opacity: 70%;
+  display: block;
+  margin: 30px;
+  font-size: 70px;
 }
 
-form{
-  display: inline;
+header,form{
+  min-height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+form input, form button{
+  padding: .5rem;
+  font-size:1rem;
+  border:none;
+ 
+
+}
+form button{
+  color: #8f4fb9;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+form button:hover{
+  background:#8f4fb9 ;
+  color: white;
+
 }
 .select{
   display: inline;
-  margin: 1rem;
+  padding: 1rem;
+  font-size:1rem;
+} 
+.todo-container{
+  display: flex;
+  justify-content: center;
   
-  
 }
-input{
-  padding: .5rem;
-  border-style: none;
-}
-.todo-button{
-  padding:.5rem;
-  border-style: none;
-  background: rgb(97, 128, 212);
-  cursor: pointer;
-}
-.fa-plus-square{
-  font-size: 1;
-  color: white;
-}
-.todo-item{
+.todo-list{
+  min-width: 40%;
   list-style: none;
-  display: inline;
 
-  padding: 0rem 0.5rem;
+
 }
-.todo-list {
-  min-width: 30%;
-  list-style: none;
+.todo{
+  margin: 0.5rem;
+  background: white;
+  color:black;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+ 
   
 }
-.completed{
-  text-decoration: line-through;
-  opacity: 0.5;
+.todo li{
+  flex:1;
+  
+}
+.trash-btn,.complete-btn{
+  background: #8f4fb9;
+  color: white;
+  border:none;
+  padding:1rem
 }
