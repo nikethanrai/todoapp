@@ -92,12 +92,14 @@ form button:hover{
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+
 }
 
 
 .complete-btn{
   background: rgb(186, 235, 167);
   color: rgb(52, 189, 52);
+  
 }
 .complete-btn:hover{
   background: rgb(52, 189, 52);
@@ -112,4 +114,39 @@ form button:hover{
   background: rgb(199, 65, 65);
   color:white;
 
+}
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select{
+  margin:1rem;
+  position: relative;
+  overflow: hidden;
+
+}
+select{
+  color:hsl(276, 99%, 28%);
+  width:8rem;
+  cursor: pointer;
+  padding:.65rem;
+}
+.select::after{
+  content: '\25BC';
+  
+  border: none;
+  position: absolute;
+  background: rgb(166, 130, 250);  
+  top:1;
+  right: 0;
+  padding:.53rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.select:hover::after{
+  background: white;
+  color: rgb(166, 130, 250)
 }
